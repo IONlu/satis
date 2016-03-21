@@ -1,4 +1,10 @@
 {
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.iondev.lu"
+        }
+    ],
     "name": "composer/satis",
     "description": "Simple Repository Generator",
     "keywords": ["package", "repository", "generator", "static", "composer"],
@@ -20,7 +26,7 @@
     "bin": ["bin/satis"],
     "require": {
         "php": "^5.3.2 || ^7.0",
-        "composer/composer": "1.0.*@dev",
+        "composer/composer": "dev-ion-satis",
         "twig/twig": "^1.7",
         "symfony/console": "^2.1"
     },

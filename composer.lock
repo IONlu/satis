@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dbf3e694e2ad71c5ecc0386e439a26c8",
-    "content-hash": "ab20896fa5614149d68233cfcb349d35",
+    "hash": "5bbf2f37c593ebde6ff9a1bead10d0ea",
+    "content-hash": "4bc53f2587dc62395775e98479cf7e54",
     "packages": [
         {
             "name": "composer/composer",
-            "version": "dev-master",
+            "version": "dev-ion-satis",
             "source": {
                 "type": "git",
-                "url": "https://github.com/composer/composer.git",
-                "reference": "dc2f201152f37c2563e328531a6af349ac287cce"
+                "url": "https://github.com/IONlu/composer.git",
+                "reference": "ab8776caa84d224eeba9caef7db1c4dc05acca1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/dc2f201152f37c2563e328531a6af349ac287cce",
-                "reference": "dc2f201152f37c2563e328531a6af349ac287cce",
+                "url": "https://api.github.com/repos/IONlu/composer/zipball/ab8776caa84d224eeba9caef7db1c4dc05acca1f",
+                "reference": "ab8776caa84d224eeba9caef7db1c4dc05acca1f",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,16 @@
                     "Composer\\": "src/Composer"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Composer\\Test\\": "tests/Composer/Test"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -80,7 +89,12 @@
                 "dependency",
                 "package"
             ],
-            "time": "2016-02-24 19:54:01"
+            "support": {
+                "irc": "irc://irc.freenode.org/composer",
+                "issues": "https://github.com/composer/composer/issues",
+                "source": "https://github.com/IONlu/composer/tree/ion-satis"
+            },
+            "time": "2016-03-21 09:58:31"
         },
         {
             "name": "composer/semver",
